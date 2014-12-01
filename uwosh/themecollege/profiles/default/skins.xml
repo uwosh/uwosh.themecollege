@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="uwosh.themecollege">
+
+ <object name="uwosh_themecollege_custom_images"
+    meta_type="Filesystem Directory View"
+    directory="uwosh.themecollege:skins/uwosh_themecollege_custom_images"/>
+ <object name="uwosh_themecollege_custom_templates"
+    meta_type="Filesystem Directory View"
+    directory="uwosh.themecollege:skins/uwosh_themecollege_custom_templates"/>
+ <object name="uwosh_themecollege_styles"
+    meta_type="Filesystem Directory View"
+    directory="uwosh.themecollege:skins/uwosh_themecollege_styles"/>
+
+ <skin-path name="uwosh.themecollege" based-on="Plone Classic Theme">
+	<layer name="uwosh_themecollege_custom_images" 		insert-after="custom"/>
+	<layer name="uwosh_themecollege_custom_templates"	insert-after="uwosh_themecollege_custom_images"/>
+	<layer name="uwosh_themecollege_styles"				insert-after="uwosh_themecollege_custom_templates"/>
+	<layer name="uwosh_theme_styles" 					insert-after="uwosh_themecollege_styles"/>
+	<layer name="uwosh_theme_custom_images" 			insert-after="uwosh_theme_styles"/>
+	<layer name="uwosh_theme_custom_templates" 			insert-after="uwosh_theme_custom_images"/>
+	<layer name="classic_styles" 			insert-after="uwosh_theme_custom_templates"/>
+	<layer name="classic_ecmascript" 			insert-after="classic_styles"/>
+ </skin-path>
+
+</object>

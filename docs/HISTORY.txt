@@ -1,0 +1,26 @@
+Changelog
+=========
+
+1.1
+---
+
+* works with Plone 4.0.1 now (refers to classic theme and layers)
+
+* shows personal_bar for logged in users (skinned to match)
+
+
+0.3
+---
+
+* updates how it handles dependencies
+
+* add metadata files
+
+
+0.2.13b1
+--------
+
+* topnav and audience nav and footer links, white uw oshkosh 
+  square link now look for portal property uwosh_home_url if 
+  set by uwosh.themecollege
+  [Kim Nyugen]

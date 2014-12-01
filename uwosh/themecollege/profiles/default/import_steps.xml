@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<import-steps>
+    <!--
+    <import-step id="uwosh.themecollege.various"
+               version="20081204-01"
+               handler="uwosh.themecollege.setuphandlers.setupVarious"
+               title="uwosh.themecollege: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+    </import-step>
+    -->
+</import-steps>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="Plone Classic Theme">
+
+   <object name="uwosh_themecollege_custom_images"
+       meta_type="Filesystem Directory View"
+       directory="uwosh.themecollege:skins/uwosh_themecollege_custom_images"
+       remove="True"
+    />
+    <object name="uwosh_themecollege_custom_templates"
+        meta_type="Filesystem Directory View"
+        directory="uwosh.themecollege:skins/uwosh_themecollege_custom_templates"
+        remove="True"
+    />
+    <object name="uwosh_themecollege_styles"
+        meta_type="Filesystem Directory View"
+        directory="uwosh.themecollege:skins/uwosh_themecollege_styles"
+        remove="True"
+    />
+
+    <skin-path name="uwosh.themecollege" remove="True" based-on="Plone Classic Theme">
+        <layer name="uwosh_themecollege_custom_images"
+            insert-after="custom"
+            remove="True"
+        />
+        <layer name="uwosh_themecollege_custom_templates"
+            insert-after="uwosh_themecollege_custom_images"
+            remove="True"
+        />
+        <layer name="uwosh_themecollege_styles"
+            insert-after="uwosh_themecollege_custom_templates"
+            remove="True"/>
+        <layer name="classic_styles" insert-after="uwosh_theme_custom_templates" remove="True"/>
+	<layer name="classic_ecmascript" insert-after="classic_styles" remove="True"/>
+
+ </skin-path>
+
+</object>

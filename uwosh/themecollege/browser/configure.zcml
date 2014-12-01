@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.themecollege">
+
+    <!-- 'uwosh.themecollege' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="uwosh.themecollege"
+        />
+        
+  	<browser:viewlet
+  		name="uwosh.themecollege.sitetitle"
+  		manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+  		layer="uwosh.themecollege.browser.interfaces.IThemeSpecific"
+  		class=".viewlets.SiteTitle"
+  		permission="zope2.View" />
+
+</configure>
